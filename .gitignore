@@ -5,6 +5,7 @@ __pycache__/
 
 # Large binary posterior files
 *.nc
+reports/posterior/
 
 # C extensions
 *.so
