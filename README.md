@@ -87,6 +87,14 @@ Uncertainty statistics (validation):
 - Mean posterior std of predicted probability: ~0.22
 - 95th percentile posterior std: ~0.44
 
+### Prior Sensitivity Analysis
+
+Bayesian logistic regression was evaluated across a range of prior variances (σ ∈ {0.5, 1.0, 2.0, 5.0}). Across this range, discriminative and calibration metrics remained largely unchanged.
+
+This behavior is consistent with Bayesian asymptotics in high-data regimes, where the likelihood dominates the prior and posterior estimates converge. As a result, further gains are not achieved through prior tuning alone.
+
+Subsequent analysis therefore focuses on uncertainty-aware decision making rather than raw predictive performance.
+
 ---
 
 ## Calibration Analysis
