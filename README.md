@@ -71,6 +71,22 @@ Two baseline models were implemented to establish strong non-Bayesian performanc
 | Logistic Regression | 0.764   | 0.528  | 0.562    | 0.184 | 0.776    |
 | XGBoost             | 0.779   | 0.558  | 0.430    | 0.135 | 0.820    |
 
+### Bayesian Logistic Regression (Initial Results)
+
+A Bayesian logistic regression model with Gaussian priors on coefficients was implemented and trained using full posterior sampling (NUTS).
+
+With a relatively strong prior (σ = 1.0), the model exhibited:
+
+- Lower discriminative performance compared to frequentist baselines
+- Significantly higher posterior predictive uncertainty
+
+This behavior is consistent with strong regularization imposed by the prior, which shrinks coefficients toward zero and favors conservative predictions. The results highlight the sensitivity of Bayesian models to prior assumptions and motivate a systematic prior sensitivity analysis.
+
+Uncertainty statistics (validation):
+
+- Mean posterior std of predicted probability: ~0.22
+- 95th percentile posterior std: ~0.44
+
 ---
 
 ## Calibration Analysis
