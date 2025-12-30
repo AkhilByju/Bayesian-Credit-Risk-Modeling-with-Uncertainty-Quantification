@@ -1,0 +1,95 @@
+{
+  "config": {
+    "posterior_path": "reports/posterior/bayes_logreg_sigma_2.0.nc",
+    "cost_fp": 1.0,
+    "cost_fn": 5.0
+  },
+  "threshold_sweep": {
+    "val_best_threshold": 0.1675,
+    "val_best_cost": 0.5561565462953945,
+    "test_best_threshold": 0.1675,
+    "test_best_cost": 0.5562914439768398
+  },
+  "abstention": {
+    "val": {
+      "rows": [
+        {
+          "abstain_frac": 0.0,
+          "coverage": 1.0,
+          "accuracy": 0.28,
+          "expected_cost": 0.5561565462953945
+        },
+        {
+          "abstain_frac": 0.05,
+          "coverage": 0.9500653594771242,
+          "accuracy": 0.29168959823885526,
+          "expected_cost": 0.5603754433807902
+        },
+        {
+          "abstain_frac": 0.1,
+          "coverage": 0.9001307189542483,
+          "accuracy": 0.3023525994772001,
+          "expected_cost": 0.5656045449257969
+        },
+        {
+          "abstain_frac": 0.2,
+          "coverage": 0.8,
+          "accuracy": 0.3261437908496732,
+          "expected_cost": 0.5754312805446772
+        },
+        {
+          "abstain_frac": 0.3,
+          "coverage": 0.6998692810457516,
+          "accuracy": 0.3518864400448263,
+          "expected_cost": 0.5849741776540807
+        },
+        {
+          "abstain_frac": 0.4,
+          "coverage": 0.6,
+          "accuracy": 0.3851851851851852,
+          "expected_cost": 0.5906362580773816
+        }
+      ]
+    },
+    "test": {
+      "rows": [
+        {
+          "abstain_frac": 0.0,
+          "coverage": 1.0,
+          "accuracy": 0.2833333333333333,
+          "expected_cost": 0.5562914439768398
+        },
+        {
+          "abstain_frac": 0.05,
+          "coverage": 0.95,
+          "accuracy": 0.2938011695906433,
+          "expected_cost": 0.5605365062058927
+        },
+        {
+          "abstain_frac": 0.1,
+          "coverage": 0.9,
+          "accuracy": 0.3034567901234568,
+          "expected_cost": 0.5656685248274993
+        },
+        {
+          "abstain_frac": 0.2,
+          "coverage": 0.8,
+          "accuracy": 0.32416666666666666,
+          "expected_cost": 0.5758648153778201
+        },
+        {
+          "abstain_frac": 0.3,
+          "coverage": 0.7,
+          "accuracy": 0.3511111111111111,
+          "expected_cost": 0.5845398613746301
+        },
+        {
+          "abstain_frac": 0.4,
+          "coverage": 0.6,
+          "accuracy": 0.37777777777777777,
+          "expected_cost": 0.5908906590621852
+        }
+      ]
+    }
+  }
+}
