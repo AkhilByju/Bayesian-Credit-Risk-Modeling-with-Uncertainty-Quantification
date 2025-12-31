@@ -106,12 +106,6 @@ You can paste the README section verbatim.
 
 ---
 
-# ✅ README UPDATE (FINAL RESULTS SECTION)
-
-Add this **as a new section** near the end of your README, after Bayesian modeling / prior sensitivity.
-
----
-
 ## Decision Layer: Cost-Sensitive and Uncertainty-Aware Risk Modeling
 
 To translate probabilistic predictions into actionable decisions, a **Bayesian decision layer** was implemented on top of posterior predictive outputs.
